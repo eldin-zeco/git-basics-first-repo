@@ -1,3 +1,70 @@
-h2 {
-  color: rebeccapurple;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #dfdfdfd4;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.image-container {
+  background: linear-gradient(#ff522fa2, #DD2476a2);
+  background: linear-gradient(in lch, #ff522fa2, #dd2477ba);
+  justify-items: center;
+  overflow: hidden;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  max-width: 1200px;
+  grid-template-areas: 
+  "one one six seven seven"
+  "two three four four ten"
+  "two five five nine ten"
+  "eight five five nine ten";
+}
+
+.images img{
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.images:nth-child(1) {
+  grid-area: one;
+}
+.images:nth-child(2) {
+  grid-area: two;
+}
+.images:nth-child(3) {
+  grid-area: three;
+}
+.images:nth-child(4) {
+  grid-area: four;
+}
+.images:nth-child(5) {
+  grid-area: five;
+}
+.images:nth-child(6) {
+  grid-area: six;
+}
+.images:nth-child(7) {
+  grid-area: seven;
+}
+.images:nth-child(8) {
+  grid-area: eight;
+}
+.images:nth-child(9) {
+  grid-area: nine;
+}
+.images:nth-child(10) {
+  grid-area: ten;
 }
